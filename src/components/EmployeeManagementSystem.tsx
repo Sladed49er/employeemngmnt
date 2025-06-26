@@ -402,21 +402,21 @@ export default function PersonalityAssessmentSystem() {
 
   if (currentStep === 'submitted') {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="max-w-2xl mx-auto text-center p-8">
-          <div className="bg-white rounded-lg shadow-lg p-12">
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="bg-white rounded-lg shadow-lg p-6 sm:p-12">
             <div className="mb-8">
-              <div className="mx-auto w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-6">
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 bg-green-500 rounded-full flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
               </div>
               
-              <h1 className="text-3xl font-bold text-gray-900 mb-4">Assessment Successfully Submitted! 🎉</h1>
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Assessment Successfully Submitted! 🎉</h1>
               
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
-                <h2 className="text-xl font-semibold text-blue-900 mb-3">What happens next?</h2>
-                <div className="text-left space-y-3 text-blue-800">
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 sm:p-6 mb-6">
+                <h2 className="text-lg sm:text-xl font-semibold text-blue-900 mb-3">What happens next?</h2>
+                <div className="text-left space-y-3 text-blue-800 text-sm sm:text-base">
                   <p className="flex items-start gap-3">
                     <span className="text-blue-500 mt-1">📧</span>
                     <span>Your comprehensive personality assessment has been automatically sent to our HR team for review</span>
@@ -432,20 +432,20 @@ export default function PersonalityAssessmentSystem() {
                 </div>
               </div>
 
-              <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
-                <h3 className="text-lg font-semibold text-green-900 mb-2">Thank you, {userName}! 👏</h3>
-                <p className="text-green-800">
+              <div className="bg-green-50 border border-green-200 rounded-lg p-4 sm:p-6 mb-8">
+                <h3 className="text-base sm:text-lg font-semibold text-green-900 mb-2">Thank you, {userName}! 👏</h3>
+                <p className="text-green-800 text-sm sm:text-base">
                   We appreciate the time you took to complete this comprehensive assessment for the <strong>{targetJobTitle}</strong> position. 
                   Your responses help us understand how we can best support your success and determine if this role aligns with your strengths and career goals.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <p className="text-gray-600 text-lg">
+                <p className="text-gray-600 text-base sm:text-lg">
                   Questions about your assessment or application status?
                 </p>
                 
-                <div className="grid md:grid-cols-2 gap-4 text-sm">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-gray-900 mb-2">HR Team Contact</h4>
                     <p className="text-gray-600">heidi@duncanins.com</p>
@@ -480,50 +480,50 @@ export default function PersonalityAssessmentSystem() {
   if (currentStep === 'intro') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <div className="container mx-auto px-4 py-8">
-          <div className="max-w-4xl mx-auto text-center py-12">
+        <div className="container mx-auto px-4 py-6 sm:py-8">
+          <div className="max-w-4xl mx-auto text-center py-6 sm:py-12">
             <div className="mb-8">
-              <Brain className="h-16 w-16 text-purple-600 mx-auto mb-4" />
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">Employee Management System</h1>
-              <h2 className="text-2xl text-gray-700 mb-2">Personality Assessment Tool</h2>
-              <p className="text-gray-600">Modernized from the Original 1989 MicroCom Systems Program</p>
-              <p className="text-sm text-gray-500 mt-2">Copyright 1985 Dennis Drew • Enhanced with AI Analysis 2025</p>
+              <Brain className="h-12 w-12 sm:h-16 sm:w-16 text-purple-600 mx-auto mb-4" />
+              <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Employee Management System</h1>
+              <h2 className="text-xl sm:text-2xl text-gray-700 mb-2">Personality Assessment Tool</h2>
+              <p className="text-gray-600 px-4">Modernized from the Original 1989 MicroCom Systems Program</p>
+              <p className="text-sm text-gray-500 mt-2 px-4">Copyright 1985 Dennis Drew • Enhanced with AI Analysis 2025</p>
             </div>
             
-            <div className="bg-blue-50 p-8 rounded-lg mb-8">
-              <h3 className="text-xl font-semibold text-blue-900 mb-4">About This Assessment</h3>
-              <p className="text-blue-800 leading-relaxed mb-4">
+            <div className="bg-blue-50 p-6 sm:p-8 rounded-lg mb-8 mx-4 sm:mx-0">
+              <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-4">About This Assessment</h3>
+              <p className="text-blue-800 leading-relaxed mb-4 text-sm sm:text-base">
                 This AI-enhanced personality assessment analyzes your fit for specific job positions. 
                 There is no way you can &quot;pass&quot; or &quot;fail&quot;, because this is not a test. It provides 
                 insights into your work style, personality match, and career recommendations.
               </p>
-              <p className="text-blue-700">
+              <p className="text-blue-700 text-sm sm:text-base">
                 You&apos;ll evaluate 30 personality terms and receive an AI-powered analysis including 
                 job fit percentage, alternative career suggestions, and personalized development plans.
               </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white p-6 rounded-lg shadow-sm border">
-                <User className="h-8 w-8 text-green-600 mx-auto mb-3" />
-                <h4 className="font-semibold text-gray-900 mb-2">Personal Information</h4>
-                <p className="text-gray-600 text-sm">Provide basic details for your personalized report</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 px-4 sm:px-0">
+              <div className="bg-white p-4 sm:p-6 rounded-lg shadow-sm border">
+                <User className="h-6 w-6 sm:h-8 sm:w-8 text-green-600 mx-auto mb-3" />
+                <h4 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Personal Information</h4>
+                <p className="text-gray-600 text-xs sm:text-sm">Provide basic details for your personalized report</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border">
-                <FileText className="h-8 w-8 text-blue-600 mx-auto mb-3" />
-                <h4 className="font-semibold text-gray-900 mb-2">30-Term Assessment</h4>
-                <p className="text-gray-600 text-sm">Rate how well each personality trait describes you</p>
+              <div className="bg-white p-4 sm:p-6 rounded-lg shadow-sm border">
+                <FileText className="h-6 w-6 sm:h-8 sm:w-8 text-blue-600 mx-auto mb-3" />
+                <h4 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">30-Term Assessment</h4>
+                <p className="text-gray-600 text-xs sm:text-sm">Rate how well each personality trait describes you</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border">
-                <Brain className="h-8 w-8 text-purple-600 mx-auto mb-3" />
-                <h4 className="font-semibold text-gray-900 mb-2">AI Job Fit Analysis</h4>
-                <p className="text-gray-600 text-sm">Get percentage match for your target role plus alternative suggestions</p>
+              <div className="bg-white p-4 sm:p-6 rounded-lg shadow-sm border">
+                <Brain className="h-6 w-6 sm:h-8 sm:w-8 text-purple-600 mx-auto mb-3" />
+                <h4 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">AI Job Fit Analysis</h4>
+                <p className="text-gray-600 text-xs sm:text-sm">Get percentage match for your target role plus alternative suggestions</p>
               </div>
             </div>
             
             <button 
               onClick={() => setCurrentStep('info')}
-              className="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 text-lg font-medium transition-colors"
+              className="px-6 sm:px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 text-base sm:text-lg font-medium transition-colors"
             >
               Begin Assessment
             </button>
@@ -536,19 +536,19 @@ export default function PersonalityAssessmentSystem() {
   if (currentStep === 'info') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <div className="container mx-auto px-4 py-8">
-          <div className="max-w-2xl mx-auto py-8">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Application Information</h2>
-              <p className="text-gray-600">Tell us about yourself and the position you&apos;re interested in</p>
+        <div className="container mx-auto px-4 py-6 sm:py-8">
+          <div className="max-w-2xl mx-auto py-4 sm:py-8">
+            <div className="text-center mb-6 sm:mb-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Application Information</h2>
+              <p className="text-gray-600 text-sm sm:text-base px-4">Tell us about yourself and the position you&apos;re interested in</p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-sm border space-y-6">
+            <div className="bg-white p-4 sm:p-8 rounded-lg shadow-sm border space-y-4 sm:space-y-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-lg"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-base sm:text-lg"
                   value={userName}
                   onChange={(e: ChangeEvent<HTMLInputElement>) => setUserName(e.target.value)}
                   placeholder="Enter your full name"
@@ -559,10 +559,10 @@ export default function PersonalityAssessmentSystem() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Position You&apos;re Applying For *</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-lg"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-base sm:text-lg"
                   value={targetJobTitle}
                   onChange={(e: ChangeEvent<HTMLInputElement>) => setTargetJobTitle(e.target.value)}
-                  placeholder="e.g. Software Engineer, Marketing Manager, Sales Representative"
+                  placeholder="e.g. Software Engineer, Marketing Manager"
                 />
               </div>
               
@@ -570,7 +570,7 @@ export default function PersonalityAssessmentSystem() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Current Position/Role</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-lg"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-base sm:text-lg"
                   value={userPosition}
                   onChange={(e: ChangeEvent<HTMLInputElement>) => setUserPosition(e.target.value)}
                   placeholder="Enter your current job title (optional)"
@@ -581,17 +581,17 @@ export default function PersonalityAssessmentSystem() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Assessment Date</label>
                 <input
                   type="date"
-                  className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-lg"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-base sm:text-lg"
                   value={assessmentDate}
                   onChange={(e: ChangeEvent<HTMLInputElement>) => setAssessmentDate(e.target.value)}
                 />
               </div>
               
-              <div className="pt-6">
+              <div className="pt-4 sm:pt-6">
                 <button 
                   onClick={() => setCurrentStep('assessment')}
                   disabled={!userName || !targetJobTitle}
-                  className="w-full px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-lg font-medium transition-colors"
+                  className="w-full px-4 sm:px-6 py-2 sm:py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-base sm:text-lg font-medium transition-colors"
                 >
                   Continue to Assessment
                 </button>
@@ -606,49 +606,49 @@ export default function PersonalityAssessmentSystem() {
   if (currentStep === 'assessment') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <div className="container mx-auto px-4 py-8">
-          <div className="max-w-4xl mx-auto py-8">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Personality Assessment</h2>
-              <p className="text-gray-600 mb-4">
+        <div className="container mx-auto px-4 py-6 sm:py-8">
+          <div className="max-w-4xl mx-auto py-4 sm:py-8">
+            <div className="text-center mb-6 sm:mb-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Personality Assessment</h2>
+              <p className="text-gray-600 mb-4 text-sm sm:text-base px-4">
                 Rate HOW WELL each term describes you as a person using the scale below:
               </p>
               
-              <div className="bg-gray-50 p-4 rounded-lg inline-block">
-                <div className="grid grid-cols-5 gap-4 text-sm">
+              <div className="bg-gray-50 p-3 sm:p-4 rounded-lg inline-block">
+                <div className="grid grid-cols-5 gap-2 sm:gap-4 text-xs sm:text-sm">
                   <div className="text-center">
-                    <div className="font-bold text-lg">1</div>
+                    <div className="font-bold text-sm sm:text-lg">1</div>
                     <div>Not very</div>
                   </div>
                   <div className="text-center">
-                    <div className="font-bold text-lg">2</div>
+                    <div className="font-bold text-sm sm:text-lg">2</div>
                     <div>Just a little</div>
                   </div>
                   <div className="text-center">
-                    <div className="font-bold text-lg">3</div>
+                    <div className="font-bold text-sm sm:text-lg">3</div>
                     <div>Somewhat</div>
                   </div>
                   <div className="text-center">
-                    <div className="font-bold text-lg">4</div>
+                    <div className="font-bold text-sm sm:text-lg">4</div>
                     <div>Ordinarily</div>
                   </div>
                   <div className="text-center">
-                    <div className="font-bold text-lg">5</div>
+                    <div className="font-bold text-sm sm:text-lg">5</div>
                     <div>Very</div>
                   </div>
                 </div>
               </div>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-sm border">
-              <div className="grid md:grid-cols-2 gap-x-12 gap-y-6">
+            <div className="bg-white p-4 sm:p-8 rounded-lg shadow-sm border">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-x-12 sm:gap-y-6">
                 {assessmentTerms.map((term, index) => (
-                  <div key={index} className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <span className="text-sm text-gray-500 w-6">{index + 1}.</span>
-                      <span className="font-medium text-gray-900 ml-2 min-w-32">{term}</span>
+                  <div key={index} className="flex items-center justify-between py-2">
+                    <div className="flex items-center flex-1">
+                      <span className="text-xs sm:text-sm text-gray-500 w-4 sm:w-6">{index + 1}.</span>
+                      <span className="font-medium text-gray-900 ml-2 text-sm sm:text-base min-w-0 flex-1">{term}</span>
                     </div>
-                    <div className="flex space-x-2 ml-4">
+                    <div className="flex space-x-1 sm:space-x-2 ml-2 sm:ml-4">
                       {[1, 2, 3, 4, 5].map((value) => (
                         <label key={value} className="cursor-pointer">
                           <input
@@ -659,7 +659,7 @@ export default function PersonalityAssessmentSystem() {
                             onChange={() => updateResponse(index, value)}
                             className="sr-only"
                           />
-                          <div className={`w-8 h-8 rounded-full border-2 flex items-center justify-center text-sm font-medium transition-colors ${
+                          <div className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 flex items-center justify-center text-xs sm:text-sm font-medium transition-colors ${
                             assessmentResponses[index] === value
                               ? 'bg-purple-600 border-purple-600 text-white'
                               : 'border-gray-300 text-gray-400 hover:border-purple-300'
@@ -673,15 +673,15 @@ export default function PersonalityAssessmentSystem() {
                 ))}
               </div>
               
-              <div className="mt-8 pt-6 border-t">
-                <div className="flex justify-between items-center">
+              <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t">
+                <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
                   <div className="text-sm text-gray-600">
                     Progress: {assessmentResponses.filter(r => r > 0).length} of 30 completed
                   </div>
                   <button 
                     onClick={submitAssessment}
                     disabled={!allComplete || isAnalyzing}
-                    className="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-lg font-medium transition-colors"
+                    className="w-full sm:w-auto px-6 sm:px-8 py-2 sm:py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-base sm:text-lg font-medium transition-colors"
                   >
                     {isAnalyzing ? 'Analyzing with AI...' : allComplete ? 'Generate AI Analysis' : 'Complete All Questions'}
                   </button>
@@ -696,15 +696,15 @@ export default function PersonalityAssessmentSystem() {
 
   if (currentStep === 'loading') {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
         <div className="text-center">
-          <Brain className="h-16 w-16 text-purple-600 mx-auto mb-4 animate-pulse" />
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Analyzing & Submitting Assessment</h2>
-          <p className="text-gray-600 mb-4">Our AI is processing your personality profile and sending results to HR...</p>
-          <div className="w-64 bg-gray-200 rounded-full h-2 mx-auto">
+          <Brain className="h-12 w-12 sm:h-16 sm:w-16 text-purple-600 mx-auto mb-4 animate-pulse" />
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Analyzing & Submitting Assessment</h2>
+          <p className="text-gray-600 mb-4 text-sm sm:text-base px-4">Our AI is processing your personality profile and sending results to HR...</p>
+          <div className="w-48 sm:w-64 bg-gray-200 rounded-full h-2 mx-auto">
             <div className="bg-purple-600 h-2 rounded-full animate-pulse" style={{width: '70%'}}></div>
           </div>
-          <p className="text-sm text-gray-500 mt-4">This may take a few moments</p>
+          <p className="text-xs sm:text-sm text-gray-500 mt-4">This may take a few moments</p>
         </div>
       </div>
     );
