@@ -215,7 +215,6 @@ export async function POST(request: NextRequest) {
 
         <div class="footer">
             <p><strong>Employee Management System • Personality Assessment Tool</strong></p>
-            <p>Modernized from the Original 1989 MicroCom Systems Program by Dennis Drew</p>
             <p>Enhanced with AI Analysis • Generated on ${new Date().toLocaleDateString()}</p>
             <p>This assessment is confidential and intended for HR evaluation purposes only.</p>
         </div>
