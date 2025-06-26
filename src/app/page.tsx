@@ -1,9 +1,9 @@
-import EmployeeManagementSystem from '@/components/EmployeeManagementSystem';
+import PersonalityAssessmentSystem from '@/components/EmployeeManagementSystem';
 
 export default function Home() {
   return (
     <main>
-      <EmployeeManagementSystem />
+      <PersonalityAssessmentSystem />
     </main>
   );
 }
