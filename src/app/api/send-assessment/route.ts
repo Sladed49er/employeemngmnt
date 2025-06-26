@@ -225,7 +225,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: ['heidi@duncanins.com', 'matt@everysolutionit.com'],
+      to: ['matt@everysolutionit.com'],
       subject: `🧠 Personality Assessment Results - ${userName} (${targetJobTitle})`,
       html: htmlContent,
     };
